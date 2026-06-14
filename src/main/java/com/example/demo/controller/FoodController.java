@@ -62,6 +62,10 @@ public class FoodController {
     public Order placeOrder(@RequestBody Order order) {
         return orderRepository.save(order);
     }
+     @GetMapping("/orders")
+     public List<Order> getAllOrders() {
+    	 return orderRepository.findAll();
+     }
 
     
 }
