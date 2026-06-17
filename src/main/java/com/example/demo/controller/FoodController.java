@@ -11,7 +11,7 @@ import com.example.demo.model.Food;
 import com.example.demo.model.Order;
 import com.example.demo.repo.FoodRepository;
 
-@CrossOrigin(origins = "https://spice-delight-restaurant-rho.vercel.app", allowCredentials = "true")
+@CrossOrigin(origins = "*", allowedHeaders = "*", methods = {RequestMethod.GET , RequestMethod.POST , RequestMethod.PUT , RequestMethod.DELETE})
 @RestController
 @RequestMapping("/api/orders") 
 public class FoodController {
